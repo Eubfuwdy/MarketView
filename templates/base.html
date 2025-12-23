@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>MarketView</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>📊 MarketView</h2>
+            <a href="/">Dashboard</a>
+            <a href="/cotacoes">Cotações</a>
+            <a href="/carteira">Carteira</a>
+        </aside>
+
+        <main class="content">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+    
+</body>
+</html>

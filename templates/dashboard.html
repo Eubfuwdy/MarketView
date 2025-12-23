@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Visão Geral do Mercado</h1>
+
+<div class="cards">
+  <div class="card">
+    <span>💵 Dólar Comercial</span>
+    <h2>R$ {{ dollar }}</h2>
+  </div>
+
+  <div class="card">
+    <span>💶 Euro Comercial</span>
+    <h2>R$ {{ euro }}</h2>
+  </div>
+</div>
+
+<div class="table-container">
+  <h2>Mais Negociadas / Destaques</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Ativo</th>
+        <th>Preço (R$)</th>
+        <th>Variação</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for stock in stocks %}
+      <tr>
+        <td>{{ stock.ticker }}</td>
+        <td>{{ stock.price }}</td>
+        <td class="{{ 'up' if stock.variation >= 0 else 'down' }}">
+          {{ stock.variation }}%
+          {{ '↑' if stock.variation >= 0 else '↓' }}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}
