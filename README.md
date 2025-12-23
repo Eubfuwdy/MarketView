@@ -51,6 +51,7 @@ MARKETVIEW/
 └── .gitignore
 
 ▶️ Como Executar o Projeto
+
 1️⃣ Clone o repositório
 git clone https://github.com/Eubfuwdy/MarketView
 cd MarketView
