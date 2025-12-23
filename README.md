@@ -52,7 +52,7 @@ MARKETVIEW/
 
 ▶️ Como Executar o Projeto
 1️⃣ Clone o repositório
-git clone https://github.com/SEU_USUARIO/MarketView.git
+git clone https://github.com/Eubfuwdy/MarketView
 cd MarketView
 
 2️⃣ Crie o ambiente virtual
