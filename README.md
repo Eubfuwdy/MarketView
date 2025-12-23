@@ -83,4 +83,4 @@ http://127.0.0.1:5000
 
 🎯 Objetivo do Projeto
 
-Este projeto foi desenvolvido com foco em aprendizado prático, organização de backend, integração com APIs financeiras e construção de dashboards web — ideal para portfólio em desenvolvimento web e Python.
+Este projeto foi desenvolvido com foco em aprendizado prático, organização de backend, integração com APIs financeiras e construção de dashboards web.
